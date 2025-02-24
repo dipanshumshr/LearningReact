@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+body {
+  background-color: rgb(49, 48, 48);
+}
+
+input{
+  color: aliceblue;
+  border: 0.5cm;
+}

@@ -1,0 +1,266 @@
+/* Weather.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #1e1e1e;
+  }
+  
+  header {
+    background: transparent; /* Remove the full background */
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  .header-content {
+    max-width: 800px; /* Match with other containers */
+  margin: 0 auto;
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-title {
+    color: white;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #fafbfb, #eff1f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  main {
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(
+      135deg,
+      #1e1e1e,
+      #2d2d2d
+    );
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .searchBox {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .searchBar {
+    width: 70%;
+    padding: 1rem 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+  }
+  
+  .searchBar::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .searchBar:focus {
+    outline: none;
+    border-color: #00B4DB;
+    box-shadow: 0 0 20px rgba(0, 180, 219, 0.2);
+  }
+  
+  .weather-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #00B4DB, #0083B0);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .weather-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #00c6f0, #0095c7);
+  }
+  
+  .weatherBox {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .Location {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .Location p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .date {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .tempBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .tempareture {
+    text-align: center;
+    padding: 1rem; /* Increased padding */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    min-width: 280px;
+  }
+  
+  .tempareture:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tempareture p {
+    margin: 1rem 0; /* Increased margin */
+    font-size: 1.5rem; /* Increased base font size */
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .tempareture p:first-child {
+    font-size: 2.5rem; /* Increased temperature size */
+  font-weight: 600;
+  margin: 1.5rem 0; /* Added more space around main temperature */
+  background: linear-gradient(135deg, #00B4DB, #0083B0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .weather {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .weather:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .weather p {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .weatherBox {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .header-content {
+        margin: 0 20px;
+      }
+      
+      .header-title {
+        font-size: 1.8rem;
+      }
+  
+    .searchBox {
+      padding: 1.5rem;
+    }
+  
+    .searchBar {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .weather-button {
+      width: 100%;
+    }
+  
+    .weatherBox {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  
+    .Location p {
+      font-size: 1.5rem;
+    }
+  
+    .tempareture p:first-child {
+        font-size: 3rem;
+      }
+    
+      .tempareture p {
+        font-size: 1.2rem;
+      }
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1e1e1e;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #00B4DB;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0083B0;
+  }
