@@ -12,5 +12,4 @@ function UserContextProvider({children}) {
         </userContext.Provider>
   )
 }
-
 export default UserContextProvider
